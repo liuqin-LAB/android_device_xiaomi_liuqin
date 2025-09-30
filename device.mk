@@ -31,6 +31,10 @@ TARGET_SCREEN_WIDTH := 1800
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.liuqin.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.liuqin.rc
 
+# Carrier
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.carrier=wifi-only
+
 # GMS
 WITH_GMS_COMMS_SUITE := false
 
