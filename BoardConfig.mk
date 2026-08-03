@@ -22,6 +22,10 @@ DEVICE_PATH := device/xiaomi/liuqin
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/system_ext/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/framework_compatibility_matrix.xml
+
 # Audio
 AUDIO_FEATURE_ENABLED_CIRRUS_CALIBRATION_RESISTANCE := true
 

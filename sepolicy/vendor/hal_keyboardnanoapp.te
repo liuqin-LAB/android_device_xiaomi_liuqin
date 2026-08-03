@@ -1,0 +1,21 @@
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+
+type hal_keyboardnanoapp_default, domain;
+type hal_keyboardnanoapp_default_exec, exec_type, file_type, vendor_file_type;
+
+hal_attribute(keyboardnanoapp)
+init_daemon_domain(hal_keyboardnanoapp_default)
+hal_server_domain(hal_keyboardnanoapp_default, hal_keyboardnanoapp)
+
+binder_use(hal_keyboardnanoapp_default)
+binder_call(hal_keyboardnanoapp_client, hal_keyboardnanoapp_server)
+binder_call(hal_keyboardnanoapp_server, hal_keyboardnanoapp_client)
+hal_attribute_service(hal_keyboardnanoapp, hal_keyboardnanoapp_service)
+
+userdebug_or_eng(`
+hal_client_domain(shell, hal_keyboardnanoapp)
+')
+
+allow hal_keyboardnanoapp_default vendor_nanosic_device:chr_file rw_file_perms;

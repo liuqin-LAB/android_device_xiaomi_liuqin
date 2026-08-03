@@ -58,6 +58,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/liuqin/proprietary/vendor/firmware/novatek_nt36532_m81_fw_csot.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_nt36532_m81_fw_csot.bin \
     vendor/xiaomi/liuqin/proprietary/vendor/firmware/novatek_nt36532_m81_fw_tm.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_nt36532_m81_fw_tm.bin
 
+# Keyboard
+PRODUCT_PACKAGES += \
+    vendor.lineage.keyboard-service.liuqin
+
+PRODUCT_PACKAGES_DEBUG += vendor.lineage.keyboard-client.liuqin
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/idc/,$(TARGET_COPY_OUT_SYSTEM_EXT)/usr/idc/)
 
