@@ -1,0 +1,2 @@
+# Keyboard cover
+genfscon sysfs /devices/virtual/nanodev/nanodev0 u:object_r:vendor_sysfs_nanosic:s0
