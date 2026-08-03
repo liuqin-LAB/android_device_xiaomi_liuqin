@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">平板电脑设置</string>
+    <string name="double_tap_title">点按平板电脑两次即显示</string>
+    <string name="double_tap_summary">点按屏幕两次以唤醒。</string>
+    <string name="pickup_title">拿起平板电脑即显示</string>
+    <string name="pickup_summary">拿起平板电脑时唤醒屏幕。</string>
+    <string name="pen_wake_title">手写笔点按唤醒</string>
+    <string name="pen_wake_summary">使用已连接的手写笔点按以唤醒屏幕。</string>
+    <string name="use_gesture">使用此手势</string>
+    <string name="stylus_title">手写笔</string>
+    <string name="keyboard_title">磁吸键盘</string>
+    <string name="stylus_and_keyboard_title">手写笔与键盘</string>
+    <string name="stylus_and_keyboard_summary">手写笔、磁吸键盘</string>
+    <string name="device_info_title">设备信息</string>
+    <string name="connection_title">连接状态</string>
+    <string name="battery_title">电量</string>
+    <string name="firmware_title">固件版本</string>
+    <string name="button_actions_title">按键操作</string>
+    <string name="primary_button_title">主按键</string>
+    <string name="secondary_button_title">副按键</string>
+    <string name="backlight_title">键盘背光</string>
+    <string name="brightness_title">亮度</string>
+    <string name="backlight_auto_title">自动调节键盘背光</string>
+    <string name="touchpad_title">触控板</string>
+    <string name="tap_to_click_title">轻触单击</string>
+    <string name="connected">已连接</string>
+    <string name="disconnected">未连接</string>
+    <string name="connecting">正在连接</string>
+    <string name="pairing">正在配对</string>
+    <string name="bluetooth_off">蓝牙已关闭</string>
+    <string name="connection_failed">连接失败</string>
+    <string name="unavailable">不可用</string>
+    <string name="charging_battery">%1$d%%，已吸附</string>
+    <string name="battery_percent">%1$d%%</string>
+    <string name="battery_millivolts">%1$d mV</string>
+    <string-array name="button_actions"><item>无</item><item>笔记</item><item>截屏</item><item>返回</item><item>主屏幕</item><item>最近任务</item><item>播放/暂停</item></string-array>
+</resources>

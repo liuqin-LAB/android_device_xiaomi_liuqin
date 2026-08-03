@@ -1,0 +1,10 @@
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+
+allow liuqin_parts_app sysfs:dir { getattr search };
+allow liuqin_parts_app sysfs:lnk_file read;
+
+allow liuqin_parts_app vendor_sysfs_sensors:file rw_file_perms;
+
+hal_client_domain(liuqin_parts_app, hal_keyboardnanoapp)

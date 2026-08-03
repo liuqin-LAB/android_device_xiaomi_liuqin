@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">Tablet settings</string>
+    <string name="double_tap_title">Double-tap to check tablet</string>
+    <string name="double_tap_summary">Wake the screen with a double tap.</string>
+    <string name="pickup_title">Lift to check tablet</string>
+    <string name="pickup_summary">Wake the screen when you pick up your tablet.</string>
+    <string name="pen_wake_title">Tap with stylus to wake</string>
+    <string name="pen_wake_summary">Wake the screen with a connected stylus.</string>
+    <string name="use_gesture">Use gesture</string>
+    <string name="stylus_title">Stylus</string>
+    <string name="keyboard_title">Magnetic keyboard</string>
+    <string name="stylus_and_keyboard_title">Stylus &amp; keyboard</string>
+    <string name="stylus_and_keyboard_summary">Stylus, magnetic keyboard</string>
+    <string name="device_info_title">Device information</string>
+    <string name="connection_title">Connection</string>
+    <string name="battery_title">Battery</string>
+    <string name="firmware_title">Firmware version</string>
+    <string name="button_actions_title">Button actions</string>
+    <string name="primary_button_title">Primary button</string>
+    <string name="secondary_button_title">Secondary button</string>
+    <string name="backlight_title">Keyboard backlight</string>
+    <string name="brightness_title">Brightness</string>
+    <string name="backlight_auto_title">Auto-adjust keyboard backlight</string>
+    <string name="touchpad_title">Touchpad</string>
+    <string name="tap_to_click_title">Tap to click</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Not connected</string>
+    <string name="connecting">Connecting</string>
+    <string name="pairing">Pairing</string>
+    <string name="bluetooth_off">Bluetooth is off</string>
+    <string name="connection_failed">Connection failed</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="charging_battery">%1$d%%, attached</string>
+    <string name="battery_percent">%1$d%%</string>
+    <string name="battery_millivolts">%1$d mV</string>
+    <string-array name="button_actions"><item>None</item><item>Notes</item><item>Screenshot</item><item>Back</item><item>Home</item><item>Recent apps</item><item>Play/pause</item></string-array>
+    <string-array name="button_values" translatable="false"><item>none</item><item>open_notes</item><item>screenshot</item><item>back</item><item>home</item><item>recents</item><item>media_play_pause</item></string-array>
+</resources>
