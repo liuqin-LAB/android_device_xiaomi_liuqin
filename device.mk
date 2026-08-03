@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ApertureResLiuqin \
     FrameworksResLiuqin \
+    LineageSdkResLiuqin \
     SettingsProviderResLiuqin \
     SettingsResLiuqin \
     SystemUIResLiuqin \
@@ -58,8 +59,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/liuqin/proprietary/vendor/firmware/novatek_nt36532_m81_fw_csot.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_nt36532_m81_fw_csot.bin \
     vendor/xiaomi/liuqin/proprietary/vendor/firmware/novatek_nt36532_m81_fw_tm.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_nt36532_m81_fw_tm.bin
 
-# Keyboard
+# Keyboard and device parts
 PRODUCT_PACKAGES += \
+    LiuqinParts \
     vendor.lineage.keyboard-service.liuqin
 
 PRODUCT_PACKAGES_DEBUG += vendor.lineage.keyboard-client.liuqin
