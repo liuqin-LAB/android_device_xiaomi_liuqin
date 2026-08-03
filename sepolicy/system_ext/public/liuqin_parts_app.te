@@ -1,0 +1,7 @@
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# Export the domain for the vendor touch-node and keyboard HAL client rules.
+# Keep new public types recorded in the supported compatibility ignore files.
+type liuqin_parts_app, domain;

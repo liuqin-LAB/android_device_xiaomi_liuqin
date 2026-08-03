@@ -1,0 +1,7 @@
+;; LiuqinParts has no equivalent type in the 202504 public policy.
+(type new_objects)
+(typeattribute new_objects)
+(typeattributeset new_objects
+  ( new_objects
+    liuqin_parts_app
+  ))

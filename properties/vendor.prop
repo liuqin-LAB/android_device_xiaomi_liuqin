@@ -1,0 +1,21 @@
+# Display
+ro.vendor.display.default_fps=144
+ro.vendor.display.smartpen.idle.enable=true
+ro.vendor.display.smartpen_vrr_fps=true
+ro.vendor.display.type=lcd
+
+# Fingerprint
+persist.vendor.fingerprint.type=side
+
+# System properties
+ro.product.property_source_order=odm,vendor,product,system_ext,system
+
+# Sensors
+ro.vendor.sensors.xiaomi.double_tap=false
+ro.vendor.sensors.xiaomi.single_tap=false
+
+# Touch
+ro.vendor.touchfeature.type=43
+
+# Wi-Fi
+ro.hardware.wlan.chip=qca6490

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<overlay>
+    <item target="bool/config_show_smooth_display" value="@bool/config_show_smooth_display" />
+    <item target="bool/config_show_sim_info" value="@bool/config_show_sim_info" />
+    <item target="bool/config_show_min_refresh_rate_switch" value="@bool/config_show_min_refresh_rate_switch" />
+    <item target="bool/config_show_peak_refresh_rate_switch" value="@bool/config_show_peak_refresh_rate_switch" />
+    <item target="string/lift_to_wake_title" value="@string/lift_to_wake_title" />
+</overlay>

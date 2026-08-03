@@ -1,0 +1,6 @@
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# Match the shared system UID at s0. levelFrom=all is only supported for _app UIDs.
+user=system seinfo=platform isPrivApp=true name=org.lineageos.liuqinparts domain=liuqin_parts_app type=system_app_data_file

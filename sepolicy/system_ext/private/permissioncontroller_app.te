@@ -1,0 +1,5 @@
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+
+hal_client_domain(permissioncontroller_app, vendor_hal_qspmhal)

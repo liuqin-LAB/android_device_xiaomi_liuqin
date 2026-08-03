@@ -1,0 +1,11 @@
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.settings.overlay.liuqin">
+    <overlay android:targetPackage="com.android.settings"
+             android:isStatic="true"
+             android:resourcesMap="@xml/overlays"
+             android:priority="700"/>
+</manifest>

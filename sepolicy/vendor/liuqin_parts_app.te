@@ -1,0 +1,14 @@
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# Traverse the /sys/class/touch symlink to the virtual touch device.
+# The platform domain rules already permit reading sysfs symlinks.
+allow liuqin_parts_app sysfs:dir { getattr search };
+
+# WakeGestureSettingsController and StylusDeviceListener only write these nodes.
+# FileOutputStream also checks the opened file with fstat.
+# The double-tap label is shared with sm8450-common; do not duplicate its genfscon.
+allow liuqin_parts_app vendor_sysfs_sensors:file { getattr open write };
+
+hal_client_domain(liuqin_parts_app, hal_keyboardnanoapp)
