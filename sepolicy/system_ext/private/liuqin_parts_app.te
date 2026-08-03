@@ -1,0 +1,21 @@
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+
+typeattribute liuqin_parts_app coredomain;
+typeattribute liuqin_parts_app mlstrustedsubject;
+
+app_domain(liuqin_parts_app)
+
+allow liuqin_parts_app system_app_data_file:dir create_dir_perms;
+allow liuqin_parts_app system_app_data_file:file create_file_perms;
+
+allow liuqin_parts_app app_api_service:service_manager find;
+
+allow liuqin_parts_app self:netlink_kobject_uevent_socket {
+    bind
+    create
+    getopt
+    read
+    setopt
+};
