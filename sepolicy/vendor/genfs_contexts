@@ -1,0 +1,6 @@
+# Keyboard cover
+genfscon sysfs /devices/virtual/nanodev/nanodev0 u:object_r:vendor_sysfs_nanosic:s0
+
+# LCD pen wake mode is programmed by LiuqinParts.
+genfscon sysfs /devices/virtual/touch/touch_dev/gesture_pen_tap_enabled u:object_r:vendor_sysfs_sensors:s0
+genfscon sysfs /devices/virtual/touch/touch_dev/stylus_connection u:object_r:vendor_sysfs_sensors:s0

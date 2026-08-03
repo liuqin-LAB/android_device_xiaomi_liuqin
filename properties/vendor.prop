@@ -1,0 +1,25 @@
+# Display
+ro.vendor.display.default_fps=144
+ro.vendor.display.smartpen.idle.enable=true
+ro.vendor.display.smartpen_vrr_fps=true
+ro.vendor.display.type=lcd
+
+# Fingerprint
+persist.vendor.fingerprint.type=side
+
+# System properties
+ro.product.property_source_order=odm,vendor,product,system_ext,system
+
+# Sensors
+# Wake gestures are KEY_WAKEUP input events reported by the NT36532 driver, so
+# the oneshot-backed sensors of the xiaomi sensors HAL have no producer here.
+# Do not expose them: a subscriber would rewrite the gesture enable nodes and
+# override the user settings while never receiving an event.
+ro.vendor.sensors.xiaomi.double_tap=false
+ro.vendor.sensors.xiaomi.single_tap=false
+
+# Touch
+ro.vendor.touchfeature.type=43
+
+# Wi-Fi
+ro.hardware.wlan.chip=qca6490

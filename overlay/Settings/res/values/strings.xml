@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Generic Settings label; the liuqin touch gestures arrive as kernel
+         KEY_WAKEUP keys rather than a wake-gesture sensor. -->
+    <string name="lift_to_wake_title">Touch gestures to wake</string>
+</resources>

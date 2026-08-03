@@ -1,0 +1,7 @@
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# Sensors HAL enumerates all properties at startup; the extra reads are not
+# used for sensor behavior.
+dontaudit hal_sensors_default property_type:file { open read getattr map };

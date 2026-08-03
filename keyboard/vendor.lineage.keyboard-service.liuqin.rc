@@ -1,0 +1,6 @@
+service vendor.keyboardnanoapp-aidl /vendor/bin/hw/vendor.lineage.keyboard-service.liuqin
+    class hal
+    interface aidl vendor.xiaomi.hardware.keyboardnanoapp_aidl.IKeyboardNanoapp_aidl/default
+    user system
+    group system
+    task_profiles ServiceCapacityLow

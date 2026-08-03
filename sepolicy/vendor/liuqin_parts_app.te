@@ -1,0 +1,16 @@
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# Resolve the /sys/class/touch symlink before programming the LCD gesture
+# modes. The app never opens the qcom-battery sysfs; Hall, MAC and battery
+# arrive through the keyboard AIDL transport and power_supply uevents.
+allow liuqin_parts_app sysfs:dir { getattr search };
+allow liuqin_parts_app sysfs:lnk_file read;
+
+# LiuqinParts is the persistent writer of the two LCD gesture enable nodes.
+# sm8450-common already labels both files vendor_sysfs_sensors.
+allow liuqin_parts_app vendor_sysfs_sensors:file rw_file_perms;
+
+# Client of the magnetic keyboard AIDL transport.
+hal_client_domain(liuqin_parts_app, hal_keyboardnanoapp)

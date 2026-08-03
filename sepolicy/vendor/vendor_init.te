@@ -1,0 +1,7 @@
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# vendor_init creates /dev/ipa during early boot.
+allow vendor_init vendor_ipa_dev:file create_file_perms;
+allow vendor_init vendor_ipa_dev:chr_file w_file_perms;

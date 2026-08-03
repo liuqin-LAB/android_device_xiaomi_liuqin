@@ -1,0 +1,7 @@
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# Keyboard cover
+/dev/nanodev0 u:object_r:vendor_nanosic_device:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.keyboard-service\.liuqin u:object_r:hal_keyboardnanoapp_default_exec:s0
