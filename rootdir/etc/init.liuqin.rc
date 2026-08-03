@@ -1,0 +1,20 @@
+#
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on early-init
+    setprop sys.bootanim.ori ${ro.boot.ori:-}
+
+on property:sys.bootanim.ori=01
+    setprop ro.bootanim.set_orientation_logical_0 ORIENTATION_90
+
+on property:sys.bootanim.ori=02
+    setprop ro.bootanim.set_orientation_logical_0 ORIENTATION_0
+
+on property:sys.bootanim.ori=03
+    setprop ro.bootanim.set_orientation_logical_0 ORIENTATION_270
+
+on property:sys.bootanim.ori=04
+    setprop ro.bootanim.set_orientation_logical_0 ORIENTATION_180
