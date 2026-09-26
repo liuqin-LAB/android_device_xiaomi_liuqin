@@ -869,7 +869,7 @@ class KeyboardController(context: Context, handler: Handler) : AutoCloseable {
                 batteryMillivolts = if (fresh) batteryMillivolts.takeIf { it > 0 } else null,
                 keyboardVersion = keyboardVersion,
                 touchpadVersion = touchpadVersion,
-                firmware = firmware ?: formatVersions(),
+                firmware = if (fresh) firmware ?: formatVersions() else null,
                 bluetoothAddress = address,
             )
         if (updatedStatus == status) return
