@@ -182,7 +182,7 @@ class KeyboardSettingsFragment : SettingsBasePreferenceFragment() {
             status.batteryMillivolts?.let { getString(R.string.battery_millivolts, it) }
                 ?: getString(R.string.unavailable)
         firmware.summary =
-            status.firmware ?: getString(R.string.unavailable)
+            status.firmware?.takeIf { status.connected } ?: getString(R.string.unavailable)
     }
 
     private fun refreshControls() {
