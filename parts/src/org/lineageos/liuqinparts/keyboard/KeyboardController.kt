@@ -54,7 +54,6 @@ class KeyboardController(context: Context, handler: Handler) : AutoCloseable {
     private var status = KeyboardStatus()
     private var haveStatus = false
     private var connected = false
-    private var batteryMillivolts = 0
     private var keyboardVersion: Int? = null
     private var touchpadVersion: Int? = null
     private var firmware: String? = null
@@ -417,7 +416,6 @@ class KeyboardController(context: Context, handler: Handler) : AutoCloseable {
         KeyboardProtocol.parseStatus(payload)?.let { report ->
             val wasConnected = connected
             connected = report.connected
-            batteryMillivolts = report.batteryMillivolts
             haveStatus = true
             if (wasConnected != connected) resetAppliedFeatures()
             if (!connected) {
@@ -866,7 +864,6 @@ class KeyboardController(context: Context, handler: Handler) : AutoCloseable {
         val updatedStatus =
             KeyboardStatus(
                 connected = fresh,
-                batteryMillivolts = if (fresh) batteryMillivolts.takeIf { it > 0 } else null,
                 keyboardVersion = keyboardVersion,
                 touchpadVersion = touchpadVersion,
                 firmware = if (fresh) firmware ?: formatVersions() else null,

@@ -36,7 +36,6 @@ class KeyboardSettingsActivity : CollapsingToolbarBaseActivity() {
 
 class KeyboardSettingsFragment : SettingsBasePreferenceFragment() {
     private lateinit var connection: Preference
-    private lateinit var battery: Preference
     private lateinit var firmware: Preference
     private lateinit var backlight: SliderPreference
     private lateinit var backlightAuto: SwitchPreferenceCompat
@@ -121,14 +120,6 @@ class KeyboardSettingsFragment : SettingsBasePreferenceFragment() {
             }
         deviceInfoCategory.addPreference(connection)
 
-        battery =
-            Preference(context).apply {
-                key = KEY_BATTERY
-                title = getString(R.string.battery_title)
-                isSelectable = false
-            }
-        deviceInfoCategory.addPreference(battery)
-
         firmware =
             Preference(context).apply {
                 key = KEY_FIRMWARE
@@ -178,9 +169,6 @@ class KeyboardSettingsFragment : SettingsBasePreferenceFragment() {
         val status = KeyboardStatusStore.snapshot(requireContext())
         connection.summary =
             getString(if (status.connected) R.string.connected else R.string.disconnected)
-        battery.summary =
-            status.batteryMillivolts?.let { getString(R.string.battery_millivolts, it) }
-                ?: getString(R.string.unavailable)
         firmware.summary =
             status.firmware?.takeIf { status.connected } ?: getString(R.string.unavailable)
     }
@@ -206,7 +194,6 @@ class KeyboardSettingsFragment : SettingsBasePreferenceFragment() {
 
     private companion object {
         const val KEY_CONNECTION = "keyboard_connection"
-        const val KEY_BATTERY = "keyboard_battery"
         const val KEY_FIRMWARE = "keyboard_firmware"
         const val BACKLIGHT_BRIGHTNESS = "keyboard_back_light_brightness"
         const val BACKLIGHT_AUTO = "keyboard_back_light_automatic_adjustment"

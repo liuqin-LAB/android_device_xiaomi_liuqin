@@ -34,5 +34,4 @@
     <string name="unavailable">Unavailable</string>
     <string name="charging_battery">%1$d%%, attached</string>
     <string name="battery_percent">%1$d%%</string>
-    <string name="battery_millivolts">%1$d mV</string>
 </resources>

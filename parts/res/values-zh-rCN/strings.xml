@@ -34,5 +34,4 @@
     <string name="unavailable">不可用</string>
     <string name="charging_battery">%1$d%%，已吸附</string>
     <string name="battery_percent">%1$d%%</string>
-    <string name="battery_millivolts">%1$d mV</string>
 </resources>
